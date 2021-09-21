@@ -14,7 +14,7 @@ public class RubyController : MonoBehaviour
     void Update()
     {
         Vector2 position = transform.position;
-        position.x = position.x + 0.1f;
+        position.x = position.x + 0.05f;
         transform.position = position;
     }
 }
