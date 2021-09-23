@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 1522494095}
   - component: {fileID: 1522494094}
   m_Layer: 0
-  m_Name: RubyRunDown1
+  m_Name: Ruby
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
