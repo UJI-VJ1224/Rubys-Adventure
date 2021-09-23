@@ -216,6 +216,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1522494095}
   - component: {fileID: 1522494094}
+  - component: {fileID: 1522494096}
   m_Layer: 0
   m_Name: Ruby
   m_TagString: Untagged
@@ -288,3 +289,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1522494096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522494093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfbbd6c71e03a3e44b7e280cda62fd56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
