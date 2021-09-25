@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public ParticleSystem smokeEffect;
+
     private Animator animator;
     //private Rigidbody2D rigidbody2D;
     private float dirx;
@@ -23,5 +25,15 @@ public class EnemyController : MonoBehaviour
 
         animator.SetFloat("PosX", dirx);
         animator.SetFloat("PosY", diry);
-    }
+    }/*
+    public void Fix()
+    {
+        //broken = false;
+        //rigidbody2D.simulated = false;
+
+        //optional if you added the fixed animation
+        //animator.SetTrigger("Fixed");
+
+        smokeEffect.Stop();
+    }*/
 }
