@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 876614176295473005}
   - component: {fileID: 5138767610332300799}
   - component: {fileID: 1407641389402097113}
+  - component: {fileID: 3178670896796353631}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Untagged
@@ -102,3 +103,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3178670896796353631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316832273015240154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 050c394705138c346b3bd698a07e85f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
