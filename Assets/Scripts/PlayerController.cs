@@ -4,11 +4,19 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public float speed = 3.0f;
+    public int maxHealth = 5;
+    public float timeInvincible = 2.0f;
+    Animator animator;
+    Vector2 lookDirection = new Vector2(1, 0);
+    Rigidbody2D rigidbody2d;
     // Start is called before the first frame update
     void Start()
     {
         QualitySettings.vSyncCount = 0;
         Application.targetFrameRate = 60;
+        animator = GetComponent<Animator>();
+        rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -17,11 +25,19 @@ public class PlayerController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Debug.Log(horizontal);
-        Vector2 position = transform.position;
-        position.x = position.x + 3.0f * horizontal * Time.deltaTime;
-        position.y = position.y + 3.0f * vertical * Time.deltaTime;
-        transform.position = position;
+        Vector2 move = new Vector2(horizontal, vertical);
+        if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
+        {
+            lookDirection.Set(move.x, move.y);
+            lookDirection.Normalize();
+        }
+        animator.SetFloat("Look X", lookDirection.x);
+        animator.SetFloat("Look Y", lookDirection.y);
+        animator.SetFloat("Speed", move.magnitude);
+
+        Vector2 position = rigidbody2d.position;
+        position = position + move * speed * Time.deltaTime;
+        rigidbody2d.MovePosition(position);
 
     }
 }
