@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5611331495819568699}
   - component: {fileID: 5611331495819568698}
-  - component: {fileID: 5611331495819568700}
   - component: {fileID: 5611331495819568702}
   - component: {fileID: 5611331495819568701}
   - component: {fileID: 3438900552406927284}
   - component: {fileID: -152413254327875520}
+  - component: {fileID: 5611331495819568700}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -87,21 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5611331495819568700
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5611331495819568697}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05ff780ba20e1f54ea565bee3a58f4fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 3
-  maxHealth: 5
-  timeInvincible: 2
 --- !u!50 &5611331495819568702
 Rigidbody2D:
   serializedVersion: 4
@@ -264,3 +249,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5611331495819568700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5611331495819568697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ff780ba20e1f54ea565bee3a58f4fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  maxHealth: 5
+  timeInvincible: 2
+  shot: {fileID: 8300000, guid: b2edfd40873655249ba0e01a5cf705be, type: 3}
+  hit: {fileID: 8300000, guid: 9b1bb1f450b7d444fa4a8019d13519a7, type: 3}

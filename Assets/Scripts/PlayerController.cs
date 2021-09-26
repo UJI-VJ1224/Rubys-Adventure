@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
     public float speed = 3.0f;
     public int maxHealth = 5;
     public float timeInvincible = 2.0f;
+    public AudioClip shot;
+    public AudioClip hit;
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
     Rigidbody2D rigidbody2d;
@@ -59,7 +61,7 @@ public class PlayerController : MonoBehaviour
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
-
+        //PlayOneShot(hit);
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
     }
 
@@ -71,6 +73,7 @@ public class PlayerController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
+        //PlayOneShot(shot);
     }
     */
 }
