@@ -6498,6 +6498,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1713582384521251033, guid: 558a0ae764b25b24c86b8f54d84e8bd4, type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8973864876802340768, guid: 558a0ae764b25b24c86b8f54d84e8bd4, type: 3}
       propertyPath: m_Name
       value: Ruby
