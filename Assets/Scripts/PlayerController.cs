@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
     Rigidbody2D rigidbody2d;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,11 @@ public class PlayerController : MonoBehaviour
         Application.targetFrameRate = 60;
         animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
+    }
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 
     // Update is called once per frame
