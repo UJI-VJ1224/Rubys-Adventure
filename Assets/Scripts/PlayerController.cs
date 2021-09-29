@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public int health { get { return currentHealth; } }
     int currentHealth;
     public float timeInvincible = 2.0f;
+    bool isInvencible;
+    float invencibleTimer;
     public AudioClip shot;
     public AudioClip hit;
     Animator animator;
@@ -52,10 +54,28 @@ public class PlayerController : MonoBehaviour
         position = position + move * speed * Time.deltaTime;
         rigidbody2d.MovePosition(position);
 
+        if (isInvencible)
+        {
+            invencibleTimer -= Time.deltaTime;
+            if(invencibleTimer < 0)
+            {
+                isInvencible = false;
+            }
+        }
+
     }
 
     public void ChangeHealth(int amount)
     {
+        if(amount < 0)
+        {
+            if (isInvencible)
+            {
+                return;
+            }
+            isInvencible = true;
+            invencibleTimer = timeInvincible;
+        }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
     }
