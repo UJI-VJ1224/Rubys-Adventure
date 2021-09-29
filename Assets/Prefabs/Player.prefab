@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -152413254327875520}
   - component: {fileID: 5611331495819568700}
   - component: {fileID: 445367782}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -235,6 +235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05ff780ba20e1f54ea565bee3a58f4fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectilePrefab: {fileID: 903597609611473599, guid: e726fbdbd9fddd541813f7995a064bb9, type: 3}
   speed: 3
   maxHealth: 5
   timeInvincible: 2
