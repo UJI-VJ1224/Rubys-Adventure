@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 3.0f;
     public int maxHealth = 5;
+    public int health { get { return currentHealth; } }
+    int currentHealth;
     public float timeInvincible = 2.0f;
     public AudioClip shot;
     public AudioClip hit;
@@ -20,6 +22,7 @@ public class PlayerController : MonoBehaviour
         Application.targetFrameRate = 60;
         animator = GetComponent<Animator>();
         rigidbody2d = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
         audioSource = GetComponent<AudioSource>();
     }
     public void PlaySound(AudioClip clip)
@@ -44,12 +47,19 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Speed", move.magnitude);
 
         Vector2 position = rigidbody2d.position;
-        position.x = position.x + 3.0f * horizontal * Time.deltaTime;
-        position.y = position.y + 3.0f * vertical * Time.deltaTime;
+        position.x = position.x + speed * horizontal * Time.deltaTime;
+        position.y = position.y + speed * vertical * Time.deltaTime;
         position = position + move * speed * Time.deltaTime;
         rigidbody2d.MovePosition(position);
 
     }
+
+    public void ChangeHealth(int amount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        Debug.Log(currentHealth + "/" + maxHealth);
+    }
+
     /*
     public void ChangeHealth(int amount)
     {
