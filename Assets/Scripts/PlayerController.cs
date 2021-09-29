@@ -44,6 +44,8 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Speed", move.magnitude);
 
         Vector2 position = rigidbody2d.position;
+        position.x = position.x + 3.0f * horizontal * Time.deltaTime;
+        position.y = position.y + 3.0f * vertical * Time.deltaTime;
         position = position + move * speed * Time.deltaTime;
         rigidbody2d.MovePosition(position);
 
