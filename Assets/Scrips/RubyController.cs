@@ -5,6 +5,8 @@ using UnityEngine;
 public class RubyController : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
+    public int maxHealth = 5;
+    int currentHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -23,5 +25,11 @@ public class RubyController : MonoBehaviour
         position.y += 3.0f * vertical * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
+    }
+
+    void ChangeHealth(int amount)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        Debug.Log(currentHealth + "/" + maxHealth);
     }
 }
