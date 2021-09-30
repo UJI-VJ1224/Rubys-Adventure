@@ -5,6 +5,9 @@ using UnityEngine;
 public class RubyController : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
+
+    public float speed = 3.0f;
+
     public int maxHealth = 5;
     int currentHealth;
 
@@ -12,6 +15,7 @@ public class RubyController : MonoBehaviour
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -21,8 +25,8 @@ public class RubyController : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
 
         Vector2 position = rigidbody2d.position;
-        position.x += 3.0f * horizontal * Time.deltaTime;
-        position.y += 3.0f * vertical * Time.deltaTime;
+        position.x += speed * horizontal * Time.deltaTime;
+        position.y += speed * vertical * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
     }
