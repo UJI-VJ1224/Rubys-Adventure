@@ -9,7 +9,7 @@ public class RubyController : MonoBehaviour
     public float speed = 3.0f;
 
     public int maxHealth = 5;
-    int currentHealth;
+    public int currentHealth;
 
     // Start is called before the first frame update
     void Start()
