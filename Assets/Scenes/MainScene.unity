@@ -7169,8 +7169,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 35
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7408,7 +7408,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1435791598}
   m_Lens:
     FieldOfView: 35
-    OrthographicSize: 5
+    OrthographicSize: 4
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -7463,7 +7463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1640984419}
   - component: {fileID: 1640984418}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CameraConfiner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
