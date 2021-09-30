@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     Rigidbody2D rigidbody2d;
 
-    void Start()
+    void Awake()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
