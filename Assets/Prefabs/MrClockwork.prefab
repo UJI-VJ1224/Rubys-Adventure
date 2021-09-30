@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 214255972644905369}
   - component: {fileID: 6809963223607966060}
   - component: {fileID: 337198101}
+  - component: {fileID: 4008263784610207423}
   m_Layer: 0
   m_Name: MrClockwork
   m_TagString: Untagged
@@ -169,6 +170,22 @@ MonoBehaviour:
   vertical: 0
   changeTime: 3
   smokeEffect: {fileID: 5361011195050478104}
+--- !u!114 &4008263784610207423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500707068626040635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 900e3cf0a257adc48a7c50a4df140fcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  vertical: 0
+  changeTime: 3
+  smokeEffect: {fileID: 0}
 --- !u!1001 &3204695282703584632
 PrefabInstance:
   m_ObjectHideFlags: 0
