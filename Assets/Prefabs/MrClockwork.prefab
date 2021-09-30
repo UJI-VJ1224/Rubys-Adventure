@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2249488101376581747}
   - component: {fileID: 214255972644905369}
   - component: {fileID: 6809963223607966060}
+  - component: {fileID: 337198101}
   m_Layer: 0
   m_Name: MrClockwork
   m_TagString: Untagged
@@ -152,6 +153,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &337198101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500707068626040635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 900e3cf0a257adc48a7c50a4df140fcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  vertical: 0
+  changeTime: 3
+  smokeEffect: {fileID: 5361011195050478104}
 --- !u!1001 &3204695282703584632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -212,5 +229,10 @@ PrefabInstance:
 --- !u!4 &5361011195050478107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7358739019146626915, guid: ede7bf0e879d6754e9a0475de9128271, type: 3}
+  m_PrefabInstance: {fileID: 3204695282703584632}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5361011195050478104 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7358739019146626912, guid: ede7bf0e879d6754e9a0475de9128271, type: 3}
   m_PrefabInstance: {fileID: 3204695282703584632}
   m_PrefabAsset: {fileID: 0}
