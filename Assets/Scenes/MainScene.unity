@@ -4382,6 +4382,7 @@ GameObject:
   - component: {fileID: 1964239903}
   - component: {fileID: 1964239902}
   - component: {fileID: 1964239901}
+  - component: {fileID: 1964239905}
   m_Layer: 0
   m_Name: MrClockworkIdleDown
   m_TagString: Untagged
@@ -4502,6 +4503,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1964239905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964239900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b60170fc6593554a9cdda9afb26d2c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  vertical: 0
+  changeTime: 3
 --- !u!1 &2003332420
 GameObject:
   m_ObjectHideFlags: 0
@@ -4641,6 +4657,10 @@ PrefabInstance:
     - target: {fileID: 4880873311304406299, guid: 258bbd8b751fc13418ddce7da0e2ba82, type: 3}
       propertyPath: m_DrawMode
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880873311304406299, guid: 258bbd8b751fc13418ddce7da0e2ba82, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5285800112492740369, guid: 258bbd8b751fc13418ddce7da0e2ba82, type: 3}
       propertyPath: m_RootOrder
@@ -4909,11 +4929,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7165937165420181718, guid: 0b84034abe71e6947897fad6180e51f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2
+      value: 1.03
       objectReference: {fileID: 0}
     - target: {fileID: 7165937165420181718, guid: 0b84034abe71e6947897fad6180e51f9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.51
       objectReference: {fileID: 0}
     - target: {fileID: 7165937165420181718, guid: 0b84034abe71e6947897fad6180e51f9, type: 3}
       propertyPath: m_LocalPosition.z
