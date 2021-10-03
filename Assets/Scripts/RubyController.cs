@@ -5,9 +5,12 @@ using UnityEngine;
 public class RubyController : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
+    public int maxHealth = 5;
+    int currentHealth;
 
     void Start()
     {
+        currentHealth = maxHealth;
         rigidbody2d = GetComponent<Rigidbody2D>();
     }
 
