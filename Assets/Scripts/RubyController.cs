@@ -44,7 +44,6 @@ public class RubyController : MonoBehaviour
                 isInvincible = false;
         }
     }
-    }
 
     public void ChangeHealth(int amount)
     {
