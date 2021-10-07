@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RubyController : MonoBehaviour
 {
+    public float speed = 10.0f;
+
     public int maxHealth = 5;
     int currentHealth;
     Rigidbody2D rigidbody2d;
@@ -23,8 +25,8 @@ public class RubyController : MonoBehaviour
         float vertical = Input.GetAxis("Vertical");
         
         Vector2 position = rigidbody2d.position;
-        position.x = position.x - 10.0f* horizontal * Time.deltaTime;
-        position.y = position.y + 10.0f * vertical * Time.deltaTime;
+        position.x = position.x - speed* horizontal * Time.deltaTime;
+        position.y = position.y + speed * vertical * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
     }
