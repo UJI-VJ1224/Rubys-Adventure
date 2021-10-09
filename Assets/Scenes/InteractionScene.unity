@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 7918045}
   - component: {fileID: 7918044}
   - component: {fileID: 7918043}
+  - component: {fileID: 7918047}
   m_Layer: 0
   m_Name: soldado
   m_TagString: Untagged
@@ -254,6 +255,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7918047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7918042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e126eaaf71bd8874199c78151729aee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
+  vertical: 0
+  changeTime: 3
 --- !u!1 &88122216 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6725800001755876118, guid: 176782b26af37104c92281a842051163, type: 3}
